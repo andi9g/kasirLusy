@@ -7,7 +7,10 @@
   @include('layouts.header')
   <style>
     .bgku {
-        background-image: url({{ url("gambar", "login.jpg") }});
+        background-image: url({{ url("gambar", "login.jpg") }}),
+    }
+    .bg-primary {
+        background: #232946 !important;
     }
 
     .btn-primary {

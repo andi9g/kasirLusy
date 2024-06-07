@@ -7,16 +7,16 @@
   @include('layouts.header')
   <style>
     .btn-success {
-        background: pink;
+        background: #eebbc3
         border: none;
         color: rgb(148, 14, 37);
     }
     .bg-success {
-        background: pink !important;
+        background: #eebbc3 !important;
     }
 
     .card-secondary {
-        border-top: 3px solid pink !important;
+        border-top: 3px solid #eebbc3 !important;
     }
 
     .active {
