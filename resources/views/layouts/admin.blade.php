@@ -27,6 +27,9 @@
     .active a {
         color: rgb(255, 255, 255) !important;
     }
+    .sidebar-dark-primary {
+        background: #232946 !important;
+    }
   </style>
 
 </head>
