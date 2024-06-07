@@ -3,7 +3,7 @@
 @section('content')
 <div class="login-box">
 
-    <div class="card bg-dark">
+    <div class="card bg-primary">
         <div class="card-body pt-5">
             <h2 class="text-center mb-5">
                 <b>LOGIN</b>
