@@ -20,7 +20,7 @@
     }
 
     .active {
-        background: rgb(51, 139, 255) !important;
+        background: #b8c1ec !important;
         color: rgb(255, 255, 255) !important;
         font-weight: bold !important;
     }
