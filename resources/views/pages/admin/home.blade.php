@@ -12,7 +12,7 @@
             <div class="inner">
                 <h3 class="text-dark">{{ $penjualan }}</sup>
                 </h3>
-                <p class="text-dark text-lg text-bold">JUMLAH BARANG TERJUAL (HARI INI)</p>
+                <p class="text-dark text-lg text-bold">JUMLAH TRANSAKSI (HARI INI)</p>
             </div>
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
