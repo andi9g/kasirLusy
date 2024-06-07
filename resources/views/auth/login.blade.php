@@ -3,9 +3,9 @@
 @section('content')
 <div class="login-box">
 
-    <div class="card card-outline card-primary">
-        <div class="card-body">
-            <h2 class="text-center mb-4">
+    <div class="card bg-dark">
+        <div class="card-body pt-5">
+            <h2 class="text-center mb-5">
                 <b>LOGIN</b>
             </h2>
             <form method="POST" action="{{ route('login') }}">
@@ -35,7 +35,7 @@
                                 <div class="icheck-primary">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-    
+
                                         <label class="form-check-label" for="remember">
                                             {{ __('Remember Me') }}
                                         </label>
@@ -51,11 +51,11 @@
 
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
-                                
+
                             </div>
                         </div>
                     </form>
-                       
+
                     </div>
 
                 </div>
