@@ -1,7 +1,7 @@
 @extends('layouts.login')
 
 @section('content')
-<div class="login-box">
+<div class="login-box bgku">
 
     <div class="card bg-primary">
         <div class="card-body pt-5">
