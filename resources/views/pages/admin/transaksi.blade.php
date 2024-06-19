@@ -53,6 +53,8 @@
                               <input class="form-control" id="subtotal" type="text" readonly>
                             </div>
                         </div>
+
+
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-7"></div>
@@ -63,6 +65,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </form>
 
 
@@ -96,13 +99,36 @@
                         <div class="form-group row">
                             <label for="metodepembayaran" class="col-sm-4 col-form-label">Metode Pembayaran</label>
                             <div class="col-sm-8">
-                              <select name="metodepembayaran" id="" class="form-control">
+                              <select name="metodepembayaran" id="" onchange="pembayaran(this)" class="form-control">
                                 <option value="Cash">Cash</option>
                                 <option value="Transfer">Transfer</option>
                                 <option value="Qris">Qris</option>
                               </select>
                             </div>
                         </div>
+                        <div class="form-group text-center" style="display:none" id="barcode">
+                            <img src="{{ url('gambar', ['barcode.jpeg']) }}" width="130px" alt="">
+                        </div>
+                        <div class="form-group text-center" style="display:none" id="bca">
+                            <img src="{{ url('gambar', ['BCA.jpeg']) }}" height="90px" alt="">
+                        </div>
+
+                        <script>
+                            function pembayaran(params) {
+                                var value = params.value;
+                                var barcode = document.getElementById("barcode");
+                                var bca = document.getElementById("bca");
+                                barcode.style="display:none";
+                                bca.style="display:none"
+                                if(value=="Transfer") {
+                                    barcode.style="display:none";
+                                    bca.style="display:block"
+                                }else if(value=="Qris") {
+                                    barcode.style="display:block";
+                                    bca.style="display:none"
+                                }
+                            }
+                        </script>
 
 
 
