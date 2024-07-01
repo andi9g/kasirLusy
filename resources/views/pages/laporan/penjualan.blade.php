@@ -51,6 +51,9 @@
 
     <table width="100%" style="border-bottom: 2px double black">
         <tr>
+            <td width="100px">
+                <img src="{{ url('gambar/logo', ['logo.png']) }}" width="100%" alt="">
+            </td>
             <td valign="middle">
                 <h1 style="text-transform: uppercase">Vansesco Boutique</h1>
                 <h3>Jl. Teladan No.02 Tanjungpinang Barat</h3>
