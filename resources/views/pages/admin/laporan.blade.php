@@ -14,8 +14,8 @@
                 <div class="card-header">
                     <h5 class="card-title"><b><h3>FORM CETAK LAPORAN</h3></b></h5>
                 </div>
-                <form action="{{ route('laporan.cetak', []) }}" method="post" target="blank">
-                    @csrf
+                <form action="{{ route('laporan.cetak', []) }}" method="get" target="blank">
+                    {{-- @csrf --}}
                     <div class="card-body">
                         <div class="form-group">
                             <label for="tanggalawal">Tanggal Awal</label>

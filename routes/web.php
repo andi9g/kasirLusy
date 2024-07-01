@@ -33,7 +33,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource("transaksi", "keranjangC");
     Route::post("pembayaran/selesai", "keranjangC@selesai")->name('transaksi.selesai');
     Route::get("laporan", "penjualanC@index");
-    Route::post("laporan/cetak", "penjualanC@cetak")->name('laporan.cetak');
+    Route::get("laporan/cetak", "penjualanC@cetak")->name('laporan.cetak');
 
 });
 
